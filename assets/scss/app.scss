@@ -5,19 +5,21 @@
 @import 'functions/rem-calc';
 
 // Core
+@import 'core/mixins';
 @import 'core/reset';
 @import 'core/accessibility';
 @import 'core/breakpoints';
 @import 'core/colors';
 @import 'core/fonts';
 @import 'core/global';
-@import 'core/page-layout';
 @import 'core/typography';
 
+// Atoms
+@import 'atoms/buttons';
+
 // Components
-@import 'components/buttons';
 @import 'components/lists';
 @import 'components/tabs';
 
 // Templates
-@import 'templates/example';
+@import 'templates/page';

@@ -6,13 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Basic Sass Boilerplate" />
-	  <link href="assets/css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dmhendricks/bootstrap-grid-css@4.1.3/dist/css/bootstrap-grid.min.css" />
+    <link href="assets/css/app.css" rel="stylesheet" />
 </head>
 <body>
 
-<div id="example">
-  <h1>Hello world!</h1>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row hidden-sm-down"> <!-- Hidden on small screens -->
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+    </div>
 </div>
-
 </body>
 </html>

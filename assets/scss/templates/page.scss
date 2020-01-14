@@ -1,0 +1,20 @@
+#boilerplate {
+  width: 100%;
+  background-color: $grey-color;
+  display: flex;
+  height: 100vh;
+  justify-content:center;
+  flex-direction: column;
+
+  @include breakpoint($medium) {
+    background-color: $blue-color;
+  }
+
+  @include breakpoint($large) {
+    background-color: $dark-grey-color;
+  }
+
+  @include breakpoint($x-large) {
+    background-color: $magenta-color
+  }
+}

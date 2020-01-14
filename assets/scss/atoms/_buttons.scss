@@ -1,0 +1,38 @@
+.button{
+  border-radius: 2.5rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  margin:1rem 1.6rem 1rem 0;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  width: auto;
+  @include when-below-width($extralarge){
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin:0 1.6rem 1rem 0;
+  }
+  &.primary{
+    background: $primary-color;
+    color: black;
+  }
+  &.secondary{
+    background: $secondary-color;
+    color: $white;
+  }
+  &:hover{
+    background: $black;
+    color: $white;
+    @include transitionall;
+  }
+  &:active{
+    &.cta__primary{
+      border-bottom:2px solid $primary-color;
+    }
+    &.cta__secondary{
+      border-bottom:2px solid $secondary-color;
+    }
+  }
+}

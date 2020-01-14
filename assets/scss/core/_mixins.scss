@@ -1,0 +1,52 @@
+@import "colors";
+
+@mixin transitionall() {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $black) {
+  box-shadow: $x-axis $y-axis $blur $color;
+}
+
+// =============================================================================
+// Responsive
+// The grid system extracted from the Bootstrap 4 framework is used
+// more info => https://dmhendricks.github.io/demo/bootstrap-grid-css/
+// Extra small  <576px
+// Small        ≥576px
+// Medium       ≥768px
+// Large        ≥992px
+// Extra large  ≥1200px
+// =============================================================================
+
+$extrasmall: 0;
+$small: 767px;
+$medium: 992px;
+$large: 1084px;
+$extralarge: 1260px;
+$cinema: 1500px;
+
+
+@mixin when-below-width($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin when-above-width($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin when-small-screen() {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+

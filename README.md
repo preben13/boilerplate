@@ -1,4 +1,4 @@
-# sass-boilerplate
+# boilerplate
 The boilerplate includes gulp, sass, sourcemaps, autoprefixer, breakpoint and browsersync. And nothing else.
 
 ## Requirements
